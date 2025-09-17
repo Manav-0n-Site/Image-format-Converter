@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manav-image-format-converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ✅ AOS Library for Scroll Animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" data-aos="fade-up">
+        <header data-aos="zoom-in">
+            <h1>Image Format Converter</h1>
+            <p>Convert between PNG and JPG formats easily~manav</p>
+            <img src="https://cdn.pixabay.com/photo/2019/07/29/12/13/mobile-4370502_1280.png" class="vector-img" alt="converter vector">
+            <div class="header-icons">
+                <div class="icon-wrapper" data-aos="fade-right">
+                    <div class="icon-circle">
+                        <i class="fas fa-file-image"></i>
+                    </div>
+                    <span>PNG</span>
+                </div>
+                <div class="icon-wrapper" data-aos="zoom-in">
+                    <div class="icon-circle">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <span>Convert</span>
+                </div>
+                <div class="icon-wrapper" data-aos="fade-left">
+                    <div class="icon-circle">
+                        <i class="fas fa-file-image"></i>
+                    </div>
+                    <span>JPG</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="conversion-types" data-aos="fade-up">
+                <button class="conversion-btn active" id="pngToJpg">
+                    <i class="fas fa-arrow-right"></i> PNG to JPG
+                </button>
+                <button class="conversion-btn" id="jpgToPng">
+                    <i class="fas fa-arrow-right"></i> JPG to PNG
+                </button>
+            </div>
+
+            <div class="upload-area" id="dropArea" data-aos="flip-up">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Drag & Drop your image here</h3>
+                <p>Supported formats: PNG, JPG, JPEG</p>
+                <button class="browse-btn">Browse Files</button>
+                <input type="file" class="file-input" id="fileInput" accept=".png,.jpg,.jpeg">
+            </div>
+
+            <div class="preview-area">
+                <div class="preview-box" data-aos="fade-right">
+                    <h4>Original Image</h4>
+                    <div class="image-preview" id="originalPreview">
+                        <p>Image preview will appear here</p>
+                    </div>
+                </div>
+                <div class="preview-box" data-aos="fade-left">
+                    <h4>Converted Image</h4>
+                    <div class="image-preview" id="convertedPreview">
+                        <p>Converted image will appear here</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons" data-aos="zoom-in">
+                <button class="action-btn convert-btn" id="convertBtn" disabled>
+                    <i class="fas fa-cog"></i> Convert
+                </button>
+                <button class="action-btn download-btn" id="downloadBtn" disabled>
+                    <i class="fas fa-download"></i> Download
+                </button>
+                <button class="action-btn reset-btn" id="resetBtn">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 Image Format Converter | Made by manav<i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+        </footer>
+    </div>
+
+    <!-- ✅ AOS Library Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
