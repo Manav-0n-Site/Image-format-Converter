@@ -1,3 +1,9 @@
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
+
 # 🔄 Converter by Manav  
 
 > 🚀 **Made by Manav – a 17-year-old 12th-grade student passionate about development.**  
